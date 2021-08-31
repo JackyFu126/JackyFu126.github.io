@@ -51,5 +51,13 @@ This app is basically implemented by "MSSQL + Express.js + Node.js + Bootstrap +
  - **configTimeZone.pug**: The Time Zones Config interface for configuring time zones to launch scheduled tasks.
  - **error.pug**: The page showing the error message.
 
+>**app.js** App entry file
 
+>**.env** The environment variable file is used to store Twilio's confidentials and database connection data.
+>**config.js** Used to read .env data to connect to the TrakGene SQL Server database and Twilio server.
 
+>**scheduler.js** Used to launch a scheduled task according to the specified time zone.
+>**/notifications**
+  - **notificationsWorker.js**: Used to call sendsms.js to send notifications at the specified time.
+
+>**package.json/package-lock.json** Used to record the configuration information of the project, and the dependencies of various modules.
