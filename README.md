@@ -36,13 +36,13 @@ This app connects the appointment data stored in the TrakGene SQL Server databas
 ## Development Manual
 This app is basically implemented by "MSSQL + Express.js + Node.js + Bootstrap + Pug" stack.
 
-**node_modules** npm package installation directory
+**/node_modules** npm package installation directory
 
-**routes** Routing files directory
-  >- appointments.js
-  >- dboperations.js
-  >- sendsms.js
-  >- timezone.js
+>**/routes** Routing files directory
+ - appointments.js: Used to request and response for all pages (GET/POST methods).
+ - dboperations.js: Used to connect to MSSQL database, query and update related tables.
+ - sendsms.js: Used to introduce Twilio to customize and send reminders to all eligible appointment owners.
+ - timezone.js: Used to get and set the time zone of the scheduled task.
 
 
 
