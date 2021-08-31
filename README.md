@@ -37,11 +37,12 @@ This app connects the appointment data stored in the TrakGene SQL Server databas
 This app is basically implemented by "MSSQL + Express.js + Node.js + Bootstrap + Pug" stack.
 
 **node_modules** npm package installation directory
-> **routes** Routing files directory
-  - appointments.js
-  - dboperations.js
-  - sendsms.js
-  - timezone.js
+
+**routes** Routing files directory
+  >- appointments.js
+  >- dboperations.js
+  >- sendsms.js
+  >- timezone.js
 
 
 
