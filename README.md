@@ -36,31 +36,35 @@ This app connects the appointment data stored in the TrakGene SQL Server databas
 ## Development Manual
 This app is basically implemented by "MSSQL + Express.js + Node.js + Bootstrap + Pug" stack.
 
->**/node_modules** Directory of npm installation package 
+>**/node_modules**: Directory of npm installation package.
 
->**/routes** Directory of routing files
+>**/routes**: Directory of routing files.
  - **appointments.js**: Used to request and response for all pages (GET/POST methods).
  - **dboperations.js**: Used to connect to MSSQL database, query and update related tables.
  - **sendsms.js**: Used to introduce Twilio to customize and send reminders to all eligible appointment owners.
  - **timezone.js**: Used to get and set the time zone of the scheduled task.
 
->**/views** Directory of Pug template files
+>**/views**: Directory of Pug template files.
  - **layout.pug**: The main interface displaying all eligible appointment owners to send SMS.
  - **index.pug**: The auxiliary interface showing customized appointment reminder information.
  - **configSMS.pug**: The SMS Config interface used to display the fields in the kt_sms_config table so that system administrators can specify the customized notification text and the time before appointment date to send reminders.
  - **configTimeZone.pug**: The Time Zones Config interface for configuring time zones to launch scheduled tasks.
  - **error.pug**: The page showing the error message.
 
->**app.js** App entry file
+>**app.js**: App entry file.
 
 >**.env** The environment variable file is used to store Twilio's confidentials and database connection data.
   - **Twilio's confidentials**: You can find your TWILIO_ACCOUNT_SID and TWILIO_AUTH_TOKEN in your [Twilio Account Settings](https://console.twilio.com/?frameUrl=%2Fconsole%3Fx-target-region%3Dus1). You will also need a Twilio_Phone_Number, which you may find [here](https://console.twilio.com/us1/develop/phone-numbers/manage/active?frameUrl=%2Fconsole%2Fphone-numbers%2Fincoming%3Fx-target-region%3Dus1).
 
->**config.js** Used to read .env data to connect to the TrakGene SQL Server database and Twilio server.
+>**config.js**: Used to read .env data to connect to the TrakGene SQL Server database and Twilio server.
 
->**scheduler.js** Used to launch a scheduled task according to the specified time zone.
+>**scheduler.js**: Used to launch a scheduled task according to the specified time zone.
 
 >**/notifications**
   - **notificationsWorker.js**: Used to call sendsms.js to send notifications at the specified time.
 
->**package.json/package-lock.json** Used to record the configuration information of the project, and the dependencies of various modules.
+>**package.json/package-lock.json**:. Used to record the configuration information of the project, and the dependencies of various modules.
+
+>**kt_sms_config**: This new table is created in the TrakGene database to record the SMS configuration updates.
+  - **timeBeforeApptToSend(int)**: Specify a reminder time before the appointment date to send SMS.
+  - **customNotificationText(text)**: Customize the notification text.
