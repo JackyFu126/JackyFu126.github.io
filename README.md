@@ -57,6 +57,7 @@ This app is basically implemented by "MSSQL + Express.js + Node.js + Bootstrap +
 >**config.js** Used to read .env data to connect to the TrakGene SQL Server database and Twilio server.
 
 >**scheduler.js** Used to launch a scheduled task according to the specified time zone.
+
 >**/notifications**
   - **notificationsWorker.js**: Used to call sendsms.js to send notifications at the specified time.
 
