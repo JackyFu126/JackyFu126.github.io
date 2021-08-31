@@ -6,7 +6,7 @@ This app connects the appointment data stored in the TrakGene SQL Server databas
 ## Getting Started
 **Installing Node**
   * In order to use Express you will first have to install Nodejs and the Node Package Manager (NPM) on your operating system. 
-  * Go to (https://nodejs.org/en/) to download the required installer.
+  * Go to [haha](https://nodejs.org/en/) to download the required installer.
 
 **Installing Express**
   * Open a terminal and type `npm install express`.
