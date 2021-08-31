@@ -6,7 +6,7 @@ This app connects the appointment data stored in the TrakGene SQL Server databas
 ## Getting Started
 **Installing Node**
   * In order to use Express you will first have to install Nodejs and the Node Package Manager (NPM) on your operating system. 
-  * Go to https://nodejs.org/en/ to download the required installer.
+  * Go to (https://nodejs.org/en/) to download the required installer.
 
 **Installing Express**
   * Open a terminal and type `npm install express`.
@@ -21,7 +21,7 @@ This app connects the appointment data stored in the TrakGene SQL Server databas
   * Type `npm install twilio` in the command line of the terminal.
 
 **How To Set Environment Variables for Twilio (Optional)**
-  * Please refer to https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html for more details.
+  * Please refer to (https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html) for more details.
 
 **Installing Node-Cron Package**
   * Type `npm install --save node-cron` in the command line of the terminal.
@@ -31,9 +31,10 @@ This app connects the appointment data stored in the TrakGene SQL Server databas
   * Type `npm i moment-timezone` in the command line of the terminal.
 
 **Start App**
-  * Type `npm start` in the root directory to start the app, then open a browser and navigate to http://127.0.0.1:3000/.
+  * Type `npm start` in the root directory to start the app, then open a browser and navigate to (http://127.0.0.1:3000/).
 
 ## Development Manual
 This app is basically implemented by "MSSQL + Express.js + Node.js + Bootstrap + Pug" stack.
+
 
 
