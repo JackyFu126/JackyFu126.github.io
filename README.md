@@ -54,7 +54,7 @@ This app is basically implemented by "MSSQL + Express.js + Node.js + Bootstrap +
 >**app.js**: App entry file.
 
 >**.env** The environment variable file is used to store Twilio's confidentials and database connection data.
-  - **Twilio's confidentials**: You can find your TWILIO_ACCOUNT_SID and TWILIO_AUTH_TOKEN in your [Twilio Account Settings](https://console.twilio.com/?frameUrl=%2Fconsole%3Fx-target-region%3Dus1). You will also need a Twilio_Phone_Number, which you may find [here](https://console.twilio.com/us1/develop/phone-numbers/manage/active?frameUrl=%2Fconsole%2Fphone-numbers%2Fincoming%3Fx-target-region%3Dus1).
+  - **Twilio's confidentials**: You can find your **TWILIO_ACCOUNT_SID** and **TWILIO_AUTH_TOKEN** in your [Twilio Account Settings](https://console.twilio.com/?frameUrl=%2Fconsole%3Fx-target-region%3Dus1). You will also need a **Twilio_Phone_Number**, which you may find [here](https://console.twilio.com/us1/develop/phone-numbers/manage/active?frameUrl=%2Fconsole%2Fphone-numbers%2Fincoming%3Fx-target-region%3Dus1).
 
 >**config.js**: Used to read .env data to connect to the TrakGene SQL Server database and Twilio server.
 
