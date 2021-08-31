@@ -36,13 +36,20 @@ This app connects the appointment data stored in the TrakGene SQL Server databas
 ## Development Manual
 This app is basically implemented by "MSSQL + Express.js + Node.js + Bootstrap + Pug" stack.
 
-**/node_modules** npm package installation directory
+>**/node_modules** Directory of npm installation package 
 
->**/routes** Routing files directory
- - appointments.js: Used to request and response for all pages (GET/POST methods).
- - dboperations.js: Used to connect to MSSQL database, query and update related tables.
- - sendsms.js: Used to introduce Twilio to customize and send reminders to all eligible appointment owners.
- - timezone.js: Used to get and set the time zone of the scheduled task.
+>**/routes** Directory of routing files
+ - **appointments.js**: Used to request and response for all pages (GET/POST methods).
+ - **dboperations.js**: Used to connect to MSSQL database, query and update related tables.
+ - **sendsms.js**: Used to introduce Twilio to customize and send reminders to all eligible appointment owners.
+ - **timezone.js**: Used to get and set the time zone of the scheduled task.
+
+>**/views** Directory of Pug template files
+ - **layout.pug**: The main interface displaying all eligible appointment owners to send SMS.
+ - **index.pug**: The auxiliary interface showing customized appointment reminder information.
+ - **configSMS.pug**: The SMS Config interface used to display the fields in the kt_sms_config table so that system administrators can specify the customized notification text and the time before appointment date to send reminders.
+ - **configTimeZone.pug**: The Time Zones Config interface for configuring time zones to launch scheduled tasks.
+ - **error.pug**: The page showing the error message.
 
 
 
