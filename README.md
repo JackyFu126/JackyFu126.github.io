@@ -31,7 +31,7 @@ This app connects the appointment data stored in the TrakGene SQL Server databas
   * Type `npm i moment-timezone` in the command line of the terminal.
 
 **Start App**
-  * Type `npm start` in the root directory to start the app, then open a browser and navigate to [http://127.0.0.1:3000/](http://127.0.0.1:3000/).
+  * Type `npm start` in the root directory to start the app, then open a browser and navigate to [http://localhost:3000/](http://localhost:3000/).
 
 ## Development Manual
 This app is basically implemented by "MSSQL + Express.js + Node.js + Bootstrap + Pug" stack.
