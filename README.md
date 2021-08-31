@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+# SMS-Appointment-Reminders
 
-You can use the [editor on GitHub](https://github.com/JackyFu126/JackyFu126.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## Introduction
+This app connects the appointment data stored in the TrakGene SQL Server database with the SMS provider Tiwlio to send appointment reminders. The operator can configure the reminder time and SMS template in the interface. In addition, the configuration interface provides options for different time zones to automatically start scheduled tasks to send appointment reminders in batches.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Getting Started
+### Installing Node
+- In order to use Express you will first have to install Nodejs and the Node Package Manager (NPM) on your operating system. 
+- Go to https://nodejs.org/en/ to download the required installer.
 
-### Markdown
+### Installing Express
+Open a terminal and type `npm install express`.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Installing dotenv
+Type `npm install dotenv` in the command line of the terminal.
 
-```markdown
-Syntax highlighted code block
+### Installing node-mssql to connect Microsoft SQL Server
+Type `npm install mssql` in the command line of the terminal.
 
-# Header 1
-## Header 2
-### Header 3
+### Installing Twilio-node
+Type `npm install twilio` in the command line of the terminal.
 
-- Bulleted
-- List
+### How To Set Environment Variables for Twilio (Optional)
+Please refer to https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html for more details.
 
-1. Numbered
-2. List
+### Installing Node-Cron Package
+- Type `npm install --save node-cron` in the command line of the terminal.
+- Type `npm install --save cron` in the command line of the terminal.
 
-**Bold** and _Italic_ and `Code` text
+### Installing Moment Timezone
+Type `npm i moment-timezone` in the command line of the terminal.
 
-[Link](url) and ![Image](src)
-```
+### Start App
+Type `npm start` in the root directory to start the app, then open a browser and navigate to http://127.0.0.1:3000/.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Development Manual
+This app is basically implemented by "MSSQL + Express.js + Node.js + Bootstrap + Pug" stack.
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JackyFu126/JackyFu126.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
