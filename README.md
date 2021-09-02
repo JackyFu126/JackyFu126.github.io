@@ -68,3 +68,7 @@ This app is basically implemented by "MSSQL + Express.js + Node.js + Bootstrap +
 >**kt_sms_config**: This new table is created in the TrakGene database to record the SMS configuration updates.
   - **timeBeforeApptToSend(int)**: Specify a reminder time before the appointment date to send SMS.
   - **customNotificationText(text)**: Customize the notification text.
+
+## Deployment
+  - Type `npm run build-package` in the command line of the terminal.
+  - Click the genetated "sms-appointment-reminders.exe" to run the app in Windows.
