@@ -16,7 +16,7 @@ This app connects the appointment data stored in the TrakGene SQL Server databas
 
 **Installing node-mssql to connect Microsoft SQL Server**
   - Type `npm install mssql` in the command line of the terminal.
-  - If you encounter problems like "Failed to connect to localhost:1433-Could not connect (sequence)" when accessing SQL server Data in node js, please refer to [here](https://www.youtube.com/watch?v=boVqsffat0Q) to congirue the TCP/IP service of SQL Server Network Configuration.
+  - If you encounter problems like >*Failed to connect to localhost:1433-Could not connect (sequence)* when accessing SQL server Data in node js, please refer to [here](https://www.youtube.com/watch?v=boVqsffat0Q) to congirue the TCP/IP service of SQL Server Network Configuration.
 
 **Installing Twilio-node**
   - Type `npm install twilio` in the command line of the terminal.
