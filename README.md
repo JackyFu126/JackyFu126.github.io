@@ -3,7 +3,7 @@
 ## Introduction
 This app connects the appointment data stored in the TrakGene SQL Server database with the SMS provider Tiwlio to send appointment reminders. The web homepage displays appointment information for users who are eligible to send reminders. The operator can configure the reminder time and SMS template in the interface. In addition, the configuration interface provides options for different time zones to automatically start scheduled tasks to send appointment reminders in batches.
 
-## Getting Started (Only For developers)
+## Getting Started (Only For Developers)
 **Installing Node**
   - In order to use Express you will first have to install Nodejs and the Node Package Manager (NPM) on your operating system. 
   - Go to [nodejs](https://nodejs.org/en/) to download the required installer.
