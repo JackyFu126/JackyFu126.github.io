@@ -71,6 +71,6 @@ This app is basically implemented by "MSSQL + Express.js + Node.js + Bootstrap +
   - **customNotificationText(text)**: Customize the notification text.
 
 ## Deployment
-  - Type `npm run build-package` in the command line of the terminal to compile a 'sms-appointment-reminders.exe'.
-  - Click the genetated "sms-appointment-reminders.exe" to run the app in Windows.
+  - Type `npm run build-package` in the command line of the terminal to compile a '**sms-appointment-reminders.exe**'.
+  - Click the genetated "**sms-appointment-reminders.exe**" to run the app in Windows.
   - For testing, you can access [Logs/Messaging](https://console.twilio.com/us1/monitor/logs/sms?frameUrl=%2Fconsole%2Fsms%2Flogs%3F__override_layout__%3Dembed%26bifrost%3Dtrue%26x-target-region%3Dus1&currentFrameUrl=%2Fconsole%2Fsms%2Flogs%3F__override_layout__%3Dembed%26bifrost%3Dtrue%26x-target-region%3Dus1) to check whether the SMS was sent successfully.
