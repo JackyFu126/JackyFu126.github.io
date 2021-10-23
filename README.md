@@ -66,7 +66,7 @@ This app is basically implemented by "**MSSQL + Express.js + Node.js + Bootstrap
 
 >**package.json/package-lock.json**:. Used to record the configuration information of the project, and the dependencies of various modules.
 
->**kt_sms_config(Database Table)**: This new table is created in the TrakGene database to record the SMS configuration updates.
+>**kt_sms_config(MSSQL Table)**: This new table is created in the TrakGene database to record the SMS configuration updates.
   - **timeBeforeApptToSend(int)**: Specify a reminder time before the appointment date to send SMS.
   - **customNotificationText(text)**: Customize the notification text. 
   - **timeZone(text)**: Record time zone updates. 
