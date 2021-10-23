@@ -35,7 +35,7 @@ This app connects the appointment data stored in the TrakGene SQL Server databas
   - Type `npm start` in the root directory to start the app, then open a browser and navigate to [http://localhost:3000/](http://localhost:3000/).
 
 ## Development Manual
-This app is basically implemented by "MSSQL + Express.js + Node.js + Bootstrap + Pug" stack.
+This app is basically implemented by "**MSSQL + Express.js + Node.js + Bootstrap + Pug**" stack.
 
 >**/node_modules**: Directory of npm installation package.
 
