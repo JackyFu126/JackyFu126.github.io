@@ -68,9 +68,10 @@ This app is basically implemented by "MSSQL + Express.js + Node.js + Bootstrap +
 
 >**kt_sms_config**: This new table is created in the TrakGene database to record the SMS configuration updates.
   - **timeBeforeApptToSend(int)**: Specify a reminder time before the appointment date to send SMS.
-  - **customNotificationText(text)**: Customize the notification text.
+  - **customNotificationText(text)**: Customize the notification text. 
+  - **timeZone(text)**: Record time zone updates. 
 
-## Deployment
+## Deployment & Testing
   - Type `npm run build-package` in the command line of the terminal to compile a '**sms-appointment-reminders.exe**'.
   - Click the genetated "**sms-appointment-reminders.exe**" to run the app in Windows.
   - For testing, you can access [Logs/Messaging](https://console.twilio.com/us1/monitor/logs/sms?frameUrl=%2Fconsole%2Fsms%2Flogs%3F__override_layout__%3Dembed%26bifrost%3Dtrue%26x-target-region%3Dus1&currentFrameUrl=%2Fconsole%2Fsms%2Flogs%3F__override_layout__%3Dembed%26bifrost%3Dtrue%26x-target-region%3Dus1) to check whether the SMS was sent successfully.
