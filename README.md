@@ -1,7 +1,7 @@
 # SMS-Appointment-Reminders
 
 ## Introduction
-This app connects the appointment data stored in the TrakGene SQL Server database with the SMS provider Tiwlio to send appointment reminders. The web homepage displays appointment information for users who are eligible to send reminders. The operator can configure the reminder time and SMS template in the interface. In addition, the configuration interface provides options for different time zones to automatically start scheduled tasks to send appointment reminders in batches.
+This app connects the appointment data stored in the TrakGene SQL Server database with the SMS provider Twilio to send appointment reminders. The web homepage displays appointment information for users who are eligible to send reminders. The operator can configure the reminder time and SMS template in the interface. In addition, the configuration interface provides options for different time zones to automatically start scheduled tasks to send appointment reminders in batches.
 
 ## Getting Started (Only For Developers)
 **Installing Node**
