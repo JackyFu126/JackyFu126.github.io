@@ -40,9 +40,9 @@ This app is basically implemented by "**MSSQL + Express.js + Node.js + Bootstrap
 >**/node_modules**: Directory of npm installation package.
 
 >**/routes**: Directory of routing files.
- - **appointments.js**: Used to request and response for all pages (GET/POST methods).
+ - **appointments.js**: Used to request and response for all pages (RESTful API).
  - **dboperations.js**: Used to connect to MSSQL database, query and update related tables.
- - **sendsms.js**: Used to introduce Twilio to customize and send reminders to all eligible appointment owners.
+ - **sendsms.js**: Used to introduce the Twilio REST Client to customize and send reminders to all eligible appointment owners.
  - **timezone.js**: Used to get and set the time zone of the scheduled task.
 
 >**/views**: Directory of Pug template files.
